@@ -3,11 +3,10 @@ package initialize
 import (
 	"gin-vue-admin/global"
 
+	"github.com/go-spring/go-spring/spring-boot"
+	_ "github.com/go-spring/go-spring/starter-mysql-gorm"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-
-	_ "github.com/go-spring/go-spring/starter-mysql-gorm"
-	"github.com/go-spring/go-spring/spring-boot"
 )
 
 // 初始化数据库并产生数据库全局变量
